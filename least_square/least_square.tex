@@ -85,8 +85,12 @@ $$  \frac{\partial}{\partial \color{blue}w_b} \bigg[ \frac{1}{2}  \sum_{n=1}^{N}
 
 $$ \Longrightarrow  \bigwedge_{b \in \mathcal{B}} \bigg\{ \sum_{b' \in \mathcal{B}}   \sum_{n=1}^{N}g_{b'}({\color{red}\vec{x}^{(n)}})g_{b}({\color{red}\vec{x}^{(n)}}) {\color{blue}w_{b'}} = \sum_{n=1}^{N}  {\color{blue}y^{(n)}} \cdot  g_{b}({\color{red}\vec{x}^{(n)}}) \bigg\} $$ $$ \equiv \underbrace{  \bigg[\sum_{n=1}^{N} {\color{red}\phi^{(n)}\phi^{(n)^T}} \bigg] \vec{w} = \bigg[\sum_{n=1}^{N} {\color{blue}y^{(n)}} {\color{red}\phi^{(n)}} \bigg]}_{\text{Matrix$(|\mathcal{B}| \times |\mathcal{B}|)$-Vector$(|\mathcal{B}| \times 1)$ Multiplication }} \quad \text{where } {\color{red}\phi^{(n)}} := [g_{b}({\color{red}\vec{x}^{(n)}})]_{b \in \mathcal{B}} \text{ is column vector (also called kernel !!) }   $$
 
-\item analytic optimal solution:
+\item analytic optimal solution :
 $$ {\color{blue} \vec{w}^{*}} =   \bigg[\sum_{n=1}^{N} {\color{red}\phi^{(n)}\phi^{(n)^T}} \bigg]^{-1}\bigg[\sum_{n=1}^{N} {\color{blue}y^{(n)}} {\color{red}\phi^{(n)}} \bigg]   $$
+
+
+\item 使用 Sherman-Morrison formula 高效率計算反矩陣
+
 
 \end{itemize}
 
