@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.9.19)  3 FEB 2020 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.9.19)  3 FEB 2020 15:13
 entering extended mode
 **./least_square.tex
 (least_square.tex
@@ -737,83 +737,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--73
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-[2] [3] (least_square.aux) ) 
+[2]
+Overfull \hbox (14.2456pt too wide) detected at line 86
+\OMS/cmsy/m/n/10  []  [][][] \OT1/cmr/m/n/10 := [\OML/cmm/m/it/10 g[]\OT1/cmr/
+m/n/10 ([][])][][]
+ []
+
+[3] (least_square.aux) ) 
 Here is how much of TeX's memory you used:
- 4498 strings out of 493305
- 55106 string characters out of 3138856
+ 4516 strings out of 493305
+ 55351 string characters out of 3138856
  120280 words of memory out of 3000000
- 7804 multiletter control sequences out of 15000+200000
- 40845 words of font info for 147 fonts, out of 3000000 for 9000
+ 7821 multiletter control sequences out of 15000+200000
+ 41143 words of font info for 148 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,12n,28p,1500b,975s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsm
-iu/bsmiu30.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu4e.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu4f.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu50.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/arphic/bsmiu/bsmiu51.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/arphic/bsmiu/bsmiu52.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bs
-miu/bsmiu53.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu54.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu55.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu56.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/arphic/bsmiu/bsmiu57.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/arphic/bsmiu/bsmiu58.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/b
-smiu/bsmiu59.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu5b.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu5d.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/arphic/bsmiu/bsmiu5f.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/
-bsmiu/bsmiu60.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu61
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu62.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu63.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/arphic/bsmiu/bsmiu64.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/arphic/bsmiu/bsmiu65.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic
-/bsmiu/bsmiu66.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu6
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu68.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu69.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu6a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/arphic/bsmiu/bsmiu6b.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphi
-c/bsmiu/bsmiu6c.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu
-6e.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu73.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu75.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu76.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/arphic/bsmiu/bsmiu77.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arph
-ic/bsmiu/bsmiu78.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmi
-u7a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu7b.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu7d.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu7e.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/arphic/bsmiu/bsmiu7f.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arp
-hic/bsmiu/bsmiu80.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsm
-iu89.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu8b.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu8c.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/arphic/bsmiu/bsmiu8d.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ar
-phic/bsmiu/bsmiu8f.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bs
-miu90.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu91.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu96.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu97.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/arphic/bsmiu/bsmiu98.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/a
-rphic/bsmiu/bsmiu9a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/b
-smiuff.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on least_square.pdf (3 pages, 388399 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/b
+smiu30.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu4e.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu4f.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu50.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/arphic/bsmiu/bsmiu51.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+arphic/bsmiu/bsmiu52.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/
+bsmiu53.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu54.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu55.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu56.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/arphic/bsmiu/bsmiu57.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/arphic/bsmiu/bsmiu58.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu
+/bsmiu59.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu5b.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu5d.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/arphic/bsmiu/bsmiu5f.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmi
+u/bsmiu60.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu61.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu62.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu63.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/arphic/bsmiu/bsmiu64.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/arphic/bsmiu/bsmiu65.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsm
+iu/bsmiu66.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu67.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu68.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu69.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/arphic/bsmiu/bsmiu6a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/arphic/bsmiu/bsmiu6b.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bs
+miu/bsmiu6c.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu6e.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu73.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu75.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/arphic/bsmiu/bsmiu76.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/arphic/bsmiu/bsmiu77.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/b
+smiu/bsmiu78.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu7a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu7b.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu7d.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/arphic/bsmiu/bsmiu7e.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/arphic/bsmiu/bsmiu7f.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/
+bsmiu/bsmiu80.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu89
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu8b.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/arphic/bsmiu/bsmiu8c.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/arphic/bsmiu/bsmiu8d.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic
+/bsmiu/bsmiu8f.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu9
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu91.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu96.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu97.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/arphic/bsmiu/bsmiu98.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphi
+c/bsmiu/bsmiu9a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/arphic/bsmiu/bsmiu
+ff.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm7.pfb>
+Output written on least_square.pdf (3 pages, 407933 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
+ 356 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
