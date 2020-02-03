@@ -89,7 +89,7 @@ $$ {\color{blue} \vec{w}^{*}} =   \bigg[\sum_{n=1}^{N} {\color{red}\phi^{(n)}\ph
 
 
 \item 使用 Sherman-Morrison formula 高效率計算反矩陣
-
+$$  \left\{\begin{array}{lc}   A_1^{-1} =  \bigg({\color{red} \phi^{1} \phi^{1^T}}\bigg)^{-1} & n =1 \\ A_{n+1}^{-1} =  \bigg[ A_{n} +{\color{red} \phi^{(n+1)} \phi^{(n+1)^T}} \bigg]^{-1}  =  A_{n}^{-1} - \frac{A_{n}^{-1}{\color{red}\phi^{(n+1)} \phi^{(n+1)^T}} A_{n}^{-1}}{ 1+ {\color{red} \phi^{(n+1)^T}}  A_{n}^{-1} {\color{red}\phi^{(n+1)}}   } & n \geq 2  \end{array}\right.$$
 
 \end{itemize}
 
