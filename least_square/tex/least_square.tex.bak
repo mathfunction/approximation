@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{CJKutf8}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{color}
+\usepackage{verbatim}
+\begin{document}
+\begin{CJK}{UTF8}{bsmi}
+
+
+\title{Generalization of least square method (廣義最小平方法) }
+\date{2020.2}
+\author{加減 Plus \& Minus}
+
+
+
+
+\maketitle
+\section{機器學習情境回顧}
+給定已知 $N+1$ 筆 , $M+K$ 維"連續變數"資料集， $ \mathcal{D}:= \bigg\{\bigg({\color{red}\underbrace{x^{(n)}_1,x^{(n)}_2,...x^{(n)}_M}_{\vec{x}^{(n)}}},{\color{blue}\underbrace{y_{1}^{(n)},y_{2}^{(n)},...,y_{K}^{(n)}}_{\vec{y}^{(n)}}}\bigg)\bigg\}_{n=1}^{N+1}$
+\begin{itemize}
+
+\item $\text{切割資料集}$ $$ \forall \  \sigma \in \mathcal{S}_{N+1} , \mathcal{D} =\mathcal{D}^{\text{train}}_{\sigma} \cup \mathcal{D}^{\text{valid}}_{\sigma} ,  $$
+\begin{itemize}
+\item 本文只考慮 \color{red} Leave-One-Out : $|\mathcal{D}^{\text{train}}_{\sigma}| = N ,  |\mathcal{D}^{\text{valid}}_{\sigma}| = 1  $ 即　$\sigma \in S^{Loo}_{N+1} , |S^{Loo}_{N+1}| = C^{N+1}_{N} = N+1$
+\end{itemize}
+\item 只根據 $\mathcal{D}^{\text{train}}_{\sigma}$ , 可建構迴歸模型 $F_{\sigma} : \mathbb{R}^{M} \longrightarrow \mathbb{R}^{K} $，並同時使用 $\mathcal{D}^{\text{train}}_{\sigma}$, $\mathcal{D}^{\text{valid}}_{\sigma}$  來評估建模成效
+
+$$\text{終極目標: } \forall \sigma \in \mathcal{S}_{N+1}, \forall n=1,2,...,N+1 \quad \underbrace{F_{\sigma}({\color{red}\vec{x}^{(n)}})}_{\text{predicted}} \approx \underbrace{{\color{blue}\vec{y}^{(n)}}}_{\text{target}} $$
+\item 根據多維向量定義，可以把單一模型　$F: \mathbb{R}^{M} \longrightarrow \mathbb{R}^{K}$　問題，想成獨立$K$個模型　$f: \mathbb{R}^{M} \longrightarrow \mathbb{R} $
+$$ F_{\sigma}({\color{red}\vec{x}^{(n)}}) = \left[\begin{array}{c} f_1({\color{red}\vec{x}^{(n)}}) \\ f_2({\color{red}\vec{x}^{(n)}}) \\ ... \\ f_K ({\color{red}\vec{x}^{(n)}}) \\ \end{array} \right] \approx  \left[{\color{blue}\begin{array}{c} y_1 \\ y_2 \\... \\ y_K\\ \end{array}} \right]  = {\color{blue}\vec{y}^{(n)}} $$
+\begin{itemize}
+\item 於是只需研究　$f({\color{red}\vec{x}^{(n)}}) \approx {\color{blue}y^{(n)} } \in \mathbb{R}$　迴歸問題如何建模 !!
+\item 損失函數(Loss function)越小越好概念: 
+$$ f({\color{red}\vec{x}^{(n)}}) \approx {\color{blue}y^{(n)} }  \Longrightarrow \bigg(f({\color{red}\vec{x}^{(n)}}) - {\color{blue}y^{(n)} }\bigg)^2 \approx 0 $$ $$ \underset{\text{overall data}}{\Longrightarrow} \underbrace{\frac{1}{N}\sum_{n=1}^{N} \bigg(f({\color{red}\vec{x}^{(n)}}) - {\color{blue}y^{(n)} }\bigg)^2}_{\text{training\_loss$(\mathcal{D}^{\text{train}}_{\sigma})$}} \approx 0  , \underbrace{\bigg(f({\color{red}\vec{x}^{(N+1)}}) - {\color{blue}y^{(N+1)} }\bigg)^2}_{\text{ validation\_loss$(\mathcal{D}^{\text{valid}}_{\sigma})$}} \approx 0  $$
+
+\item 交叉驗證(cross validation)最大誤差越小概念:
+$$\underset{\text{overall $\sigma$}}{\Longrightarrow} \underset{\sigma }{\text{max }}\text{training\_loss$(\mathcal{D}^{\text{train}}_{\sigma})$} \approx 0 , \underset{\sigma }{\text{max }}\text{validation\_loss$(\mathcal{D}^{\text{valid}}_{\sigma})$} \approx 0   $$
+
+\end{itemize}
+
+\end{itemize}
+
+\newpage
+
+\section{模型假設 = 參數化 + 線性組合假設}
+\begin{itemize}
+\item 
+$f({\color{red}\vec{x}^{(n)}}) \overset{\text{引入模型假設}}{\Longrightarrow} \displaystyle{f({\color{blue}\vec{w}},{\color{red}\vec{x}^{(n)}}) := \sum_{b \in \mathcal{B}} {\color{blue}w_{b}} \cdot g_{b}({\color{red}\vec{x}^{(n)}}) \in Span \bigg\{g_{b} \bigg\}_{b \in \mathcal{B}} } =: Span \  g_{\mathcal{B}}\quad (\text{linear combinations of given basis $g_{\mathcal{B}}$})$
+
+\item 常見 basis $g_{\mathcal{B}} , (M=1)$
+\begin{itemize}
+\item Simple Intepolation: \\$$g_{\mathcal{B}} := \bigg\{1,x_1,x_1^2,...x_1^{N-1}\bigg\}$$
+
+\item Special Functions: \\
+$$g_{\mathcal{B}} := \text{ Hermites , Chebyshevs , Legendres , Laguerres , Bessels ... }$$
+
+\item Fourier Series: \\ $$ g_{\mathcal{B}} :=\bigg\{
+e^{ikx_1}\bigg\}_{k \in \mathbb{Z}}
+$$
+
+\item ODE(微分方程) \\
+$$g_{\mathcal{B}} := \bigg\{e^{\lambda x_1}\bigg\}_{\lambda \in \text{eigenvalues}}$$
+
+\end{itemize}
+
+
+\item 常見 basis $g_{\mathcal{B}} , (M\geq 1)$:
+\begin{itemize}
+\item Linear Regression: \\$$g_{\mathcal{B}} := \bigg\{1,x_1,x_2,...x_{M}\bigg\}$$
+\item Response Surface Methodology: \\$$g_{\mathcal{B}} := \bigg\{1,\underbrace{x_1,x_2,..,x_{M}}_{\text{first-order $M$ terms }},\underbrace{x_1^2,...,x_M^2,x_1x_2,x_1x_3,...x_{M-1}x_{M}}_{\text{second-order $\frac{M(M-1)}{2}$ terms (features interaction)}} \bigg\} $$
+\item DIY or data transform by domain knowledge ...\\
+\end{itemize}　
+
+\end{itemize}
+
+\newpage 
+\section{核心推導}
+\begin{itemize}
+\item 計算 $\vec{w}^{*}$ 使得  $\text{training\_loss$(\vec{w}^{*},\mathcal{D}^{\text{train}}_{\sigma})$}$ 最小，則必須滿足 first-order optimality condition 
+$$  \frac{\partial}{\partial \color{blue}w_b} \bigg[ \frac{1}{2}  \sum_{n=1}^{N}   \bigg(f({\color{blue}\overbrace{w_b,w_{-b}}^{\vec{w}}},{\color{red}\vec{x}^{(n)}}) - {\color{blue}y^{(n)} }\bigg)^2 \bigg] =\sum_{n=1}^{N}\bigg[ \frac{1}{2} \cdot \frac{\partial}{\partial \color{blue}w_b}  \bigg(f({\color{blue}\overbrace{w_b,w_{-b}}^{\vec{w}}},{\color{red}\vec{x}^{(n)}}) - {\color{blue}y^{(n)} }\bigg)^2 \bigg] = 0 $$ $$\Longrightarrow \sum_{n=1}^{N} \frac{1}{2} \times 2\bigg( f({\color{blue}\vec{w}},{\color{red}\vec{x}^{(n)}}) - y^{(n)} \bigg)\cdot g_b({\color{red}\vec{x}^{(n)}}) = \sum_{n=1}^{N} \bigg( \sum_{b' \in \mathcal{B}} {\color{blue}w_{b'}} g_{b'}({\color{red}\vec{x}^{(n)}}) - {\color{blue} y^{(n)}} \bigg) \cdot g_{b}({\color{red}\vec{x}^{(n)}})   = 0 $$
+
+$$ \Longrightarrow  \bigwedge_{b \in \mathcal{B}} \bigg\{ \sum_{b' \in \mathcal{B}}   \sum_{n=1}^{N}g_{b'}({\color{red}\vec{x}^{(n)}})g_{b}({\color{red}\vec{x}^{(n)}}) {\color{blue}w_{b'}} = \sum_{n=1}^{N}  {\color{blue}y^{(n)}} \cdot  g_{b}({\color{red}\vec{x}^{(n)}}) \bigg\} $$ $$ \equiv \underbrace{  \bigg[\sum_{n=1}^{N} {\color{red}\phi^{(n)}\phi^{(n)^T}} \bigg] \vec{w} = \bigg[\sum_{n=1}^{N} {\color{blue}y^{(n)}} {\color{red}\phi^{(n)}} \bigg]}_{\text{Matrix$(|\mathcal{B}| \times |\mathcal{B}|)$-Vector$(|\mathcal{B}| \times 1)$ Multiplication }} \quad \text{where } {\color{red}\phi^{(n)}} := [g_{b}({\color{red}\vec{x}^{(n)}})]_{b \in \mathcal{B}} \text{ is column vector (also called kernel !!) }   $$
+
+\item analytic optimal solution :
+$$ {\color{blue} \vec{w}^{*}} =   \bigg[\sum_{n=1}^{N} {\color{red}\phi^{(n)}\phi^{(n)^T}} \bigg]^{-1}\bigg[\sum_{n=1}^{N} {\color{blue}y^{(n)}} {\color{red}\phi^{(n)}} \bigg]   $$
+
+
+\item 使用 Sherman-Morrison formula 高效率計算反矩陣
+$$  \left\{\begin{array}{lc}   A_1^{-1} =  \bigg({\color{red} \phi^{(1)} \phi^{(1)^T}}\bigg)^{-1} & A^{-1}\text{is not singular}  \\ A_{n+1}^{-1} =  \bigg[ A_{n} +{\color{red} \phi^{(n+1)} \phi^{(n+1)^T}} \bigg]^{-1}  =  A_{n}^{-1} - \frac{A_{n}^{-1}{\color{red}\phi^{(n+1)} \phi^{(n+1)^T}} A_{n}^{-1}}{ 1+ {\color{red} \phi^{(n+1)^T}}  A_{n}^{-1} {\color{red}\phi^{(n+1)}}   } & n \geq 1  \end{array}\right.$$
+
+\end{itemize}
+
+\end{CJK}
+\end{document}
+
