@@ -1,4 +1,14 @@
-# 數據近似建模專題
+# 數據近似建模:
+
+
+
+## 廣義最小平方法
+
+詳細數學推導可以看 least_square.pdf ，以下為 python 實作
+
+
+
+### example.py
 
 ```shell
 # python code 
@@ -8,7 +18,5 @@ python3 example.py
 ```
 
 
-
-## example.py
 
 ![](./least_square/result.png)
