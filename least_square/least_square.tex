@@ -69,8 +69,7 @@ $$g_{\mathcal{B}} := \bigg\{e^{\lambda x_1}\bigg\}_{\lambda \in \text{eigenvalue
 \item 常見 basis $g_{\mathcal{B}} , (M\geq 1)$:
 \begin{itemize}
 \item Linear Regression: \\$$g_{\mathcal{B}} := \bigg\{1,x_1,x_2,...x_{M}\bigg\}$$
-\item Response Surface Methodology: \\$$g_{\mathcal{B}} := \bigg\{1,\underbrace{x_1,x_2,..,x_{M}}_{\text{first-order $M$ terms }},\underbrace{x_1^2,...,x_M^2,x_1x_2,x_1x_3,...x_{M-1}x_{M}}_{\text{second-order $M^2$ terms (features interaction)}} \bigg\} $$
-$$ \Longrightarrow  $$
+\item Response Surface Methodology: \\$$g_{\mathcal{B}} := \bigg\{1,\underbrace{x_1,x_2,..,x_{M}}_{\text{first-order $M$ terms }},\underbrace{x_1^2,...,x_M^2,x_1x_2,x_1x_3,...x_{M-1}x_{M}}_{\text{second-order $\frac{M(M-1)}{2}$ terms (features interaction)}} \bigg\} $$
 \item DIY or data transform by domain knowledge ...\\
 \end{itemize}　
 
