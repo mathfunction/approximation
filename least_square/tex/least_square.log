@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2020.2.3)  6 FEB 2020 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2020.2.3)  6 FEB 2020 23:00
 entering extended mode
 **./least_square.tex
 (least_square.tex
@@ -479,8 +479,8 @@ m/n/10 ([][])][][]
 [3] (least_square.aux) ) 
 Here is how much of TeX's memory you used:
  4582 strings out of 494412
- 59639 string characters out of 3172751
- 121239 words of memory out of 3000000
+ 59655 string characters out of 3172751
+ 121255 words of memory out of 3000000
  8454 multiletter control sequences out of 15000+200000
  41143 words of font info for 148 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -580,7 +580,7 @@ ype1/public/amsfonts/cm/cmsy7.pfb></Users/fuyuan/Library/Application Support/Mi
 KTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></Users/fuyu
 an/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
 s/symbols/msbm7.pfb>
-Output written on least_square.pdf (3 pages, 414567 bytes).
+Output written on least_square.pdf (3 pages, 414589 bytes).
 PDF statistics:
  356 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
